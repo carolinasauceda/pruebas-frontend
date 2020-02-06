@@ -21,8 +21,8 @@ body{
     padding: 15px 40px;
     border: .5px solid transparent;
     border-radius: 5px;
-    background: transparent;
     transition: background-color .5s;
+
 
 }
 .menu a{

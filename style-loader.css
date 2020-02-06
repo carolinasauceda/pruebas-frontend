@@ -1,6 +1,14 @@
-body{
+/*body{
     margin: 0;
     padding: 0;
+    background-color: #000000;
+} */   
+#preloader{
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
     background-color: #ffffff;
 }
 .ring{
@@ -37,19 +45,19 @@ body{
     animation: animateCircle 2s linear infinite;
 
 }
-span{
+.span2{
     display: block;
     position: absolute;
     top: calc(50% - 2px);
     left: 50%;
-    width: 50%;
+    width: 11.5%;
     height: 4px;
     background: transparent;
     transform-origin: left;
     animation: animate 2s linear infinite;
 
 }
-span:before{
+.span2:before{
     content: '';
     position: absolute;
     width: 20px;
