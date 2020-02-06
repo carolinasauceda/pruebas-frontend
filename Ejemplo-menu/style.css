@@ -10,7 +10,7 @@ body{
 .menu{
     list-style: none;
     width: 100%;
-    background: #ff3b3b;
+    background: #ff3b3b81;
     max-width: 1024px;
     margin: auto;
     border-radius: 5px;
@@ -29,15 +29,12 @@ body{
     text-decoration: none;
     text-align: center;
     font-family: sans-serif;
-    font-size: 17px;
-    color: white;
-}
-.menu li:hover{
-    background: white;
-    
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
 }
 .menu a:hover{
-    color: #ff3b3b;
+    color: #ffffff;
 }
 .first{
     margin-right: 40%;
