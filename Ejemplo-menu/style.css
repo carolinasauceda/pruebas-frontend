@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #c3c3c3;
+
+}
+.menu{
+    list-style: none;
+    width: 100%;
+    background: #ff3b3b;
+    max-width: 1024px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+.menu li{
+    display: inline-block;
+    padding: 15px 40px;
+    border: .5px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    transition: background-color .5s;
+
+}
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+}
+.menu li:hover{
+    background: white;
+    
+}
+.menu a:hover{
+    color: #ff3b3b;
+}
+.first{
+    margin-right: 40%;
+}
