@@ -1,0 +1,16 @@
+body{
+    background: #c3c3c3;
+    margin: 0;
+    font-family:'Sacramento', cursive;
+}
+h1{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    color: #3d8bff;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
