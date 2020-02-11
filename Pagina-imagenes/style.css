@@ -20,18 +20,19 @@ h1{
     justify-content: center;
 }
 .column{
-    flex: 24%;
-    max-width: 24%;
+    flex: 23.5%;
+    max-width: 23.5%;
     padding: 0 4px;
 }
 .column img{
-    margin-top: 2px;
+    margin-top: 1px;
     vertical-align: middle;
+    width: 100%;
 }
-@media (max-width:800px){
+@media (max-width:900px){
     .column{
-        flex: 50%;
-        max-width: 50%;
+        flex: 45%;
+        max-width: 45%;
     }
 }
 @media (max-width:600px){
@@ -39,7 +40,4 @@ h1{
         flex: 100%;
         max-width: 100%;
     }
-}
-img{
-    width: 100%;
 }
