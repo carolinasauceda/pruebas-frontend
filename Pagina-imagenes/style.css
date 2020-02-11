@@ -1,16 +1,45 @@
 body{
     background: #c3c3c3;
     margin: 0;
-    font-family:'Sacramento', cursive;
+    
 }
 h1{
-    font-size: 18px;
-    text-align: center;
-    font-weight: 300;
     color: #3d8bff;
+    font-family:'Sacramento', cursive;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-bottom: 2px solid white;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    padding: 2px;
+    padding: 0 4px;
+    justify-content: center;
+}
+.column{
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+.column img{
+    margin-top: 2px;
+    vertical-align: middle;
+}
+@media (max-width:800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+img{
+    width: 100%;
 }
