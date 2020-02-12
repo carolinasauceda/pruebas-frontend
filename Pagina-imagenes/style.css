@@ -1,31 +1,32 @@
 body{
-    background: #c3c3c3;
+    background: #ffffff;
     margin: 0;
     
 }
 h1{
     color: #3d8bff;
     font-family:'Sacramento', cursive;
-    font-size: 80px;
+    font-size: 120px;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-bottom: 2px solid white;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-shadow: 1px 1px 2px #999, 0 0 10px #999, 0 0 5px #999;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 2px;
     justify-content: center;
 }
 .column{
-    flex: 23.5%;
-    max-width: 23.5%;
+    flex: 24.3%;
+    max-width: 24.3%;
     padding: 0 4px;
+    
 }
 .column img{
-    margin-top: 1px;
+    margin-top: 0px;
     vertical-align: middle;
     width: 100%;
 }
@@ -40,4 +41,14 @@ h1{
         flex: 100%;
         max-width: 100%;
     }
+}
+@keyframes anim{
+    0% {color: rgb(255, 71, 71);} /*Amarillo*/
+   25% {color: rgb(255, 238, 1);} /*Naranja*/
+   50% {color: rgb(0, 132, 255);} /*Negro*/
+   75% {color: rgb(255, 112, 179);} /*Otra vez naranja*/
+  100% {color: rgb(215, 198, 255);} /*Otra vez amarillo*/
+}
+h1 {
+  animation: anim 10s infinite alternate;
 }
