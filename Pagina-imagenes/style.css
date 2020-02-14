@@ -22,9 +22,10 @@ h1{
 .column{
     flex: 24.3%;
     max-width: 24.3%;
-    padding: 0 4px;
+    padding: 0 .5px;
     
 }
+
 .column img{
     margin-top: 0px;
     vertical-align: middle;
