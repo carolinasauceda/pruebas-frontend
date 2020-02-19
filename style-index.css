@@ -8,7 +8,7 @@ h1{
 h2{
     font-family: 'Sacramento', cursive;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px #999, 0 0 10px #999, 0 0 5px #999;
     margin-top: 20px;
     
@@ -67,3 +67,37 @@ h1 {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+body{
+    background: #c3c3c3;
+
+}
+.menu{
+    background: #ff3b3b81;
+    border-radius: 5px;
+    
+}
+.menu li{
+    
+    padding: 15px 40px;
+    list-style: none;
+
+}
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    transition: color .5s;
+    
+}
+.menu a:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    
+}
+.first{
+    margin-right: 40%;
+}
+
