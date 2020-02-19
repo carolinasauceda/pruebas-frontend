@@ -5,6 +5,11 @@ h1{
     text-shadow: 1px 1px 2px #999, 0 0 10px #999, 0 0 5px #999;
     
 }
+h2{
+    font-family: 'Sacramento', cursive;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px #999, 0 0 10px #999, 0 0 5px #999;
+}
 /*body{
     background-image: url(Pagina1/img/fondo2.jpg);
     background-repeat: no-repeat;
