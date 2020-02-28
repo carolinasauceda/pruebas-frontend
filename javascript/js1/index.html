@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+</head>
+<body>
+    <h1>Javascript 1</h1>
+    <form action="" method="POST" id="form1" onsubmit="mensaje()">
+        Nombre <input type="text" name="nombre" id="nombre">
+        <input type="submit" class="btn btn-light" value="Enviar">
+    </form>
+    <button class="btn btn-dark" id="boton1" onclick="agregar()">Mensaje</button>
+    <div id="lista">
+        
+    </div>
+
+
+    <script>
+        function mensaje()
+        {   
+            var nombre = document.getElementById("nombre").value;
+            alert("Bienvenido " + nombre);
+        }
+
+        function agregar()
+        {
+            var lista = document.getElementById("lista");
+            var node = document.createElement("h2");
+            node.innerHTML = "Hola";
+            lista.appendChild(node);
+            
+        }
+    </script>
+
+</body>
+</html>
