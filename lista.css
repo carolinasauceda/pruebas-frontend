@@ -1,17 +1,32 @@
-.fondo{
+body{
     background-image: linear-gradient(to bottom, rgba(255, 166, 166, 0.863), rgba(255, 0, 0, 0.89));
     width: 100%;
-    height: 579px;
+    height: 678px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
     
 }
 .contenedor{
-    background-color: white;
-    width: 100%;
-    height: 579px;
-    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 678px;
+    
+}
+.titulo{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    
+}
+.atajo-index a{
+    font-family: 'Sacramento', cursive;
+    text-decoration: none;
+    color: rgb(255, 73, 73);
+}
+.atajo-index a:hover{
+    color: rgb(128, 0, 0);
+    text-decoration: none;
 }
