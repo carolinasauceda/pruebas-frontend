@@ -19,8 +19,9 @@
           <button id="btn_buscar" class="btn btn-primary">Buscar</button>
           <button type="reset" id="btn_borrar" class="btn btn-danger">Borrar</button>
         </div>
-
-
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="resultado"></div>
       </div>
     </div>
     <script
@@ -43,14 +44,29 @@
         var apikey = "595c1e43";
         $("#btn_buscar").click(function() {
           $.get(
-            "http://www.omdbapi.com",
+            "https://www.omdbapi.com",
             {
               apikey: apikey,
               r: "json",
               s: $("#txt_buscar").val()
             },
             function(data, status) {
-              console.log(data);
+              var titulo = "";
+              var year ="";
+              var imdb = "";
+              var poster = "";
+              var resultado = "";
+              
+              
+              for (var num = 0; num < data.Search.length; num++){
+              //console.log(data);
+              titulo = data.Search[num].Title;
+              year = data.Search[num].Year;
+              imdb = data.Search[num].imdbID;
+              poster = data.Search[num].Poster;
+              resultado = "<div class=\"card\" style=\"width: 18rem;\"><img src=\""+ poster +"\" class=\"card-img-top\" alt=\"...\"><div class=\"card-body\"><h5 class=\"card-title\">"+ titulo +"</h5><p class=\"card-text\">Año: "+ year +".</p><p class=\"card-text\"> IMDB: "+ imdb +"</p></div></div>";
+              $("#resultado").append(resultado);
+              }
             }
           );
         });
