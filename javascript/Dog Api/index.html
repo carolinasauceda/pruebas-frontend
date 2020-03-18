@@ -13,15 +13,17 @@
   <body>
     <div class="container">
       <div class="row mt-4">
-        <div class="col-md-12">
-          <h1>Busqueda de peliculas</h1>
-          <input type="text" id="txt_buscar" class="form-control mb-2" />
-          <button id="btn_buscar" class="btn btn-primary">Buscar</button>
+        <div class="col-md-12" align="center">
+          <h1>Fotos de perritos random</h1>
+          <button id="btn_buscar" class="btn btn-primary">Perrito random</button>
           <button type="reset" id="btn_borrar" class="btn btn-danger">Borrar</button>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12" id="resultado"></div>
+        <div class="col-md-12 d-flex mt-3" id="resultado">
+
+          <br>
+        </div>
       </div>
     </div>
     <script
@@ -41,40 +43,22 @@
     ></script>
     <script>
       jQuery(document).ready(function() {
-        var apikey = "595c1e43";
         $("#btn_buscar").click(function() {
-          $.get(
-            "https://www.omdbapi.com",
-            {
-              apikey: apikey,
-              r: "json",
-              s: $("#txt_buscar").val()
-            },
-            function(data, status) {
-              var titulo = "";
-              var year ="";
-              var imdb = "";
-              var poster = "";
-              var resultado = "";
-              
-              
-              for (var num = 0; num < data.Search.length; num++){
-              console.log(data);
-              titulo = data.Search[num].Title;
-              year = data.Search[num].Year;
-              imdb = data.Search[num].imdbID;
-              poster = data.Search[num].Poster;
-              resultado = "<div class=\"card\" style=\"width: 18rem;\"><img src=\""+ poster +"\" class=\"card-img-top\" alt=\"...\"><div class=\"card-body\"><h5 class=\"card-title\">"+ titulo +"</h5><p class=\"card-text\">Año: "+ year +".</p><p class=\"card-text\"> IMDB: "+ imdb +"</p></div></div>";
+          $.getJSON("https://dog.ceo/api/breeds/image/random/4",function(data, status) {
+
+            for (var num = 0; num < 4; num++){
+              var mensaje=data.message[num];
+              resultado = "<div class=\"card\" style=\"width: 18rem;\"><img src=\""+ mensaje+"\" class=\"card-img-top\" alt=\"...\"><div class=\"card-body\"><h5 class=\"card-title\">"+"Doggo :3" +"</h5><p class=\"card-text\"></p><p class=\"card-text\"></p></div></div>";
               $("#resultado").append(resultado);
-              }
-            }
+              }}
+          )}
           );
         });
         $("#btn_borrar").click(function(){
-          $("#txt_buscar").val("");
+          $("#resultado").children("div").remove();
         });
 
-      });
+      
 
     </script>
   </body>
