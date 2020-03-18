@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="parsley.min.js"></script>
+
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <h6 class="mt-2">Datos de facturación</h6>
+        <div class="row d-flex justify-content-center">
+            <div class="col-7 form-group form">
+            <form data-parsley-validate id="form">
+                <h5 class="mt-3">Tus datos personales</h5>
+                <label for="name">Nombre(s):</label><br>
+                <input type="text" name="name" id="name" class="form-control form-control-sm" data-parsley-required>
+                <label for="lastname">Apellido:</label><br>
+                <input type="text" name="lastname" id="lastname" class="form-control form-control-sm" data-parsley-required>
+                <label for="mail">Correo:</label><br>
+                <input type="email" name="mail" id="mail" class="form-control form-control-sm" data-parsley-required data-parsley-type="email"> 
+                <label for="phone">Telefono:</label><br>
+                <input type="tel" name="phone" id="phone" class="form-control form-control-sm" data-parsley-required>
+                <button id="boton" class="btn btn-success mt-3" type="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#boton').click(function(){
+            $('#form').parsley().on('form:success', function() {
+                alert("Validacion correcta!");
+        });
+        });
+        
+    </script>
+</body>
+</html>
