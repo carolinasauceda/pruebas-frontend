@@ -16,7 +16,6 @@
         <div class="col-md-12" align="center">
           <h1>Fotos de perritos random</h1>
           <button id="btn_buscar" class="btn btn-primary">Perrito random</button>
-          <button type="reset" id="btn_borrar" class="btn btn-danger">Borrar</button>
         </div>
       </div>
       <div class="row">
@@ -44,6 +43,7 @@
     <script>
       jQuery(document).ready(function() {
         $("#btn_buscar").click(function() {
+          $("#resultado").children("div").remove();
           $.getJSON("https://dog.ceo/api/breeds/image/random/4",function(data, status) {
 
             for (var num = 0; num < 4; num++){
@@ -54,11 +54,7 @@
           )}
           );
         });
-        $("#btn_borrar").click(function(){
-          $("#resultado").children("div").remove();
-        });
-
-      
+    
 
     </script>
   </body>
