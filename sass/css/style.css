@@ -1,7 +1,7 @@
 .logo {
   font-family: 'Montserrat';
   font-weight: 400;
-  color: aquamarine;
+  color: pink;
   letter-spacing: 8px;
 }
 
@@ -30,18 +30,23 @@
 }
 
 .menu a:hover {
-  color: #80ffb5;
+  color: pink;
   text-decoration: none;
-  border-bottom: 0.5px solid #80ffb5;
+  border-bottom: 0.5px solid pink;
 }
 
 h1 {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   color: red;
 }
 
 h2 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: purple;
+}
+
+p {
+  font-family: "Titillium Web", sans-serif;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
