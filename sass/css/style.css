@@ -1,0 +1,47 @@
+.logo {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: aquamarine;
+  letter-spacing: 8px;
+}
+
+.menu {
+  background: #000000;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.menu li {
+  padding: 7px 40px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+.menu a:hover {
+  color: #80ffb5;
+  text-decoration: none;
+  border-bottom: 0.5px solid #80ffb5;
+}
+
+h1 {
+  font-family: 'Sen', sans-serif;
+  color: red;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  color: purple;
+}
+/*# sourceMappingURL=style.css.map */
