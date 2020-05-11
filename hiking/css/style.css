@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    background-image: url("../img/fondo1.png");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 100%;
+    padding-left: 20%;
+}
+nav{
+    margin-top: 1%;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 110%;
+    transition: color .5s;
+    
+}
+nav ul li a:hover{
+    color: rgb(110, 237, 253);
+    text-decoration: none;
+}
+.hero .container{
+    margin-left: 3%;
+}
+.hero{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 17%;
+    
+    
+}
+.hero h1{
+    font-size: 500%;
+    font-weight: 800;
+}
+.hero h2{
+    font-size: 270%;
+    font-weight: 800;
+}
+.hero h5{
+    font-size: 150%;
+    font-weight: 800;
+}
+.boton{
+    padding: 3% 5%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+    font-size: 95%;
+    letter-spacing: 3px;
+    transition: background-color .6s;
+    text-transform: uppercase;
+}
+.boton:hover{
+    color: #000;
+    background-color:rgb(110, 237, 253);
+    text-decoration: none;
+
+}
+.galeria
+{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 22%;
+}
+.galeria h2
+{
+    font-size: 45px;
+    color: #969696;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -4px;
+}
+.galeria h3{
+    font-size: 50px;
+    font-weight: 700;
+}
+.galeria p{
+    margin-top: 7%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.seccion-media
+{
+    margin-top: 25%;
+    background:linear-gradient(rgba(2,2,2,.1),rgba(0,0,0,.5)),url("../img/fondo2.png");
+    background-size: cover;
+    height: 5%;
+    padding: 6% 0;
+}
+.seccion-media h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.seccion-media p{
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+}
+.seccion-baja
+{
+    padding: 5%;
+}
+.seccion-baja .texto
+{
+    padding-top: 7%;
+    padding-left: 0;
+
+}
+.seccion-baja .texto h1{
+    font-size: 350%;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+}
+.fondo-footer
+{
+    background-color: #e9e9e9;
+    margin: 7% 2% 3% 2%;
+}
+.footer{
+    
+    padding: 4% 3%;
+}
+footer ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 90%;
+    transition: color .5s;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color:rgb(110, 237, 253) ;
+}
+.footer-informacion
+{
+    padding: 0 5% 4% 5%;
+}
+
+footer h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 185%;
+}
+footer h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 120%;
+}
+.derechos{
+    padding-top: 8%;
+    padding-left: 10%;
+    color: #494949;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.redes a{
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    width: 15%;
+    padding: 3% 3%;
+    text-align: center;
+    margin: 14% 5% 0 0;
+    font-size: 130%;
+    transition: background-color .6s;
+}
+.redes a:hover{
+    color: #000;
+    background-color:rgb(110, 237, 253);
+}
+.negro
+{
+    background-color: #000;
+}
