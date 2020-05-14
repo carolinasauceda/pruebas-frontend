@@ -192,7 +192,7 @@ footer h2{
     width: 310px;
   }
   
-  .carousel__images {
+  .carousel_images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -204,14 +204,14 @@ footer h2{
     transition: transform 0.25s, -webkit-transform 0.25s;
   }
   
-  .carousel__images img {
+  .carousel_images img {
     border-radius: 5px;
     margin-right: 50px;
     -webkit-box-shadow: 5px 5px 40px #777777;
             box-shadow: 5px 5px 40px #777777;
   }
   
-  .carousel__button {
+  .carousel_button {
     background: rgba(37, 37, 37, 0);
     border: 0;
     border-radius: 50%;
@@ -228,16 +228,16 @@ footer h2{
     z-index: 1;
   }
   
-  .carousel__button.previous {
+  .carousel_button.previous {
     left: -210%;
     top: 100%;
   }
   
-  .carousel__button.next {
+  .carousel_button.next {
     right: 180%;
     top: 100%;
   }
   
-  .carousel__button:hover {
+  .carousel_button:hover {
     opacity: 0.5;
   }

@@ -43,8 +43,8 @@
             <div class="col-md-7">
                 <!--Aqui dejare es espacio para el carusel de imagenes que viene en la foto-->
                 <div class="carousel">
-                    <button class="carousel__button previous fas fa-arrow-left" id="previous"></button>
-                    <div class="carousel__images">
+                    <button class="carousel_button previous fas fa-arrow-left" id="previous"></button>
+                    <div class="carousel_images">
                         <img id="foto1" src="img/foto1.png" alt="">
                         <img id="foto2" src="img/foto2.png" alt="">
                         <img id="foto3" src="img/image3.png" alt="">
@@ -52,7 +52,7 @@
                         <img id="foto5" src="img/foto2.png" alt="">
                         <img id="foto6" src="img/image3.png" alt="">
                     </div>
-                    <button class="carousel__button next fas fa-arrow-right" id="next"></button>
+                    <button class="carousel_button next fas fa-arrow-right" id="next"></button>
                 </div>
 
             </div>
@@ -119,11 +119,11 @@
     </footer>
     </div>
     <script>
-        const carouselImages = document.querySelector('.carousel__images');
-        const carouselButtons = document.querySelectorAll('.carousel__button');
-        const numberOfImages = document.querySelectorAll('.carousel__images img').length;
+        const carouselImages = document.querySelector('.carousel_images');
+        const carouselButtons = document.querySelectorAll('.carousel_button');
+        const numberOfImages = document.querySelectorAll('.carousel_images img').length;
         var img = ["foto1", "foto2","foto3","foto4","foto5","foto6"];
-        let imageIndex = 1;
+        let imageIndex = 0;
         let translateX = 0;
 
         carouselButtons.forEach(button => {
@@ -134,9 +134,13 @@
                 translateX += 300;
                 document.getElementById(img[imageIndex]).style.visibility = "visible";
                 
+            }else{
+                imageIndex--;
+                translateX += 300;
+                document.getElementById(img[imageIndex]).style.visibility = "visible";
             }
             } else {
-                let img3=imageIndex-1;
+                let img3=imageIndex;
                 document.getElementById(img[img3]).style.visibility = "hidden";
             if (imageIndex !== numberOfImages) {
                 imageIndex++;
