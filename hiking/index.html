@@ -59,14 +59,14 @@
 </div>
     <div class="seccion-media">
         <div class="d-flex justify-content-center">
-            <div class="col-md-2">
+            <div class="col- col-md-2">
             </div>
             <div class="col-12 col-md-8 text-center">
                 <h1>we're largest & safest</h1>
                 <h1>hiking organisation</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita nihil corporis maiores dolorum nostrum sint consectetur cumque accusantium reprehenderit deleniti debitis recusandae eveniet accusamus ipsam, quibusdam fugit voluptate, quo dolorem.</p>
             </div>
-            <div class="col-md-2 text-right">
+            <div class="col- col-md-2 text-right">
             </div>
         </div>
     </div>
@@ -103,6 +103,7 @@
             </div>
             <div class="col-md-6 text-center">
                 <p class="derechos">&copy;Company Name 2020. All rights reserved.</p>
+                <a class="pl-5" href="https://www.freepik.com/free-photos-vectors/travel">Travel psd created by freepik - www.freepik.com</a>
             </div>
             <div class="col-md-3 redes">
                 <div class="d-flex justify-content-end">
@@ -128,12 +129,12 @@
             if (event.target.id === 'previous') {
             if (imageIndex !== 1) {
                 imageIndex--;
-                translateX += 300;
+                translateX += 200;
                 document.getElementById(img[imageIndex]).style.visibility = "visible";
                 
             }else{
                 imageIndex--;
-                translateX += 300;
+                translateX += 200;
                 document.getElementById(img[imageIndex]).style.visibility = "visible";
             }
             } else {
@@ -141,7 +142,7 @@
                 document.getElementById(img[img3]).style.visibility = "hidden";
             if (imageIndex !== numberOfImages) {
                 imageIndex++;
-                translateX -= 300;
+                translateX -= 200;
                 
             }
             }

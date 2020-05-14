@@ -230,13 +230,13 @@ footer h2{
   }
   
   .carousel_button.previous {
-    left: -280%;
-    top: 100%;
+    left: -480%;
+    top: 80%;
   }
   
   .carousel_button.next {
-    right: 180%;
-    top: 100%;
+    right: 300%;
+    top: 80%;
   }
   
   .carousel_button:hover {
@@ -302,17 +302,20 @@ footer h2{
         font-size: 15px;
     }
     .carousel {
-        margin: 10rem auto 10rem auto;
-        width: 350px;
+        margin: 10rem 0 10rem 17rem;
+        width: 300px;
         height: 50%;
     }
+    .carousel_images img {
+        width: 60%;
+      }
     .carousel_button.previous {
-        left: -180%;
+        left: -160%;
         top: 80%;
       }
       
       .carousel_button.next {
-        right: 200%;
+        right: 170%;
         top: 80%;
       }
       .seccion-baja
@@ -358,4 +361,121 @@ footer h2{
     .redes a{
         width: 18%;
     }
+    }
+    @media (max-width: 768px){
+        .logo{
+            width: 40%;
+            padding-left: 2%;
+        }
+        nav{
+            margin-top: 1%;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 30%;
+            transition: color .5s;
+            
+        }
+        body{
+            background-image: url("../img/fondo1.png") ;
+            background-size: 70%;
+        }
+        .hero .container{
+            margin-left: -2%;
+        }
+        .hero{
+            text-transform: uppercase;
+            margin-top: 2%;
+            
+            
+        }
+        .hero h1{
+            font-size: 200%;
+            font-weight: 800;
+        }
+        .hero h2{
+            font-size: 100%;
+            font-weight: 800;
+        }
+        .hero h5{
+            font-size: 60%;
+            font-weight: 800;
+        }
+        .boton{
+            padding: 3% 3%;
+            font-size: 35%;
+        }
+        .galeria h2
+        {
+            font-size: 35px;
+        }
+        .galeria h3{
+            font-size: 40px;
+        }
+        .galeria p{
+            margin-top: 6%;
+            font-size: 15px;
+        }
+        .carousel {
+            width: 100px;
+            height: 5%;
+        }
+        .carousel_images img {
+            width: 20%;
+          }
+        .carousel_button.previous {
+            left: -160%;
+            top: 80%;
+          }
+          
+          .carousel_button.next {
+            right: 170%;
+            top: 80%;
+          }
+          .seccion-baja
+        {
+            padding: 3%;
+        }
+        .seccion-baja .texto
+        {
+            padding-top: 7%;
+            padding-left: 0;
+    
+        }
+        .seccion-baja img{
+            width: 90%;
+            padding: 4% 0 2% 0;
+        }
+        .seccion-baja .texto h1{
+            font-size: 260%;
+            font-weight: 800;
+        }
+        .fondo-footer
+        {
+            margin: 7% 1% 2% 1%;
+        }
+        .footer{
+            
+            padding: 4% 1% 4% 4%;
+        }
+        footer ul li a{
+            font-size: 80%;
+        }
+    
+        footer h1{
+            font-size: 190%;
+        }
+        footer h2{
+            font-size: 130%;
+        }
+        .derechos{
+            padding-top: 8%;
+            padding-left: 8%;
+        }
+        .redes a{
+            width: 18%;
+        }
     }
