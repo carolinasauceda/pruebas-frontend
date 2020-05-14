@@ -189,7 +189,8 @@ footer h2{
     display: flex;
     margin: 20rem auto 10rem auto;
     position: relative;
-    width: 310px;
+    width: 100px;
+    left: -40%;
   }
   
   .carousel_images {
@@ -206,7 +207,7 @@ footer h2{
   
   .carousel_images img {
     border-radius: 5px;
-    margin-right: 50px;
+    margin-right: 45px;
     -webkit-box-shadow: 5px 5px 40px #777777;
             box-shadow: 5px 5px 40px #777777;
   }
@@ -229,7 +230,7 @@ footer h2{
   }
   
   .carousel_button.previous {
-    left: -210%;
+    left: -280%;
     top: 100%;
   }
   
