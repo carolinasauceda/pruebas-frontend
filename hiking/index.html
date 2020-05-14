@@ -34,7 +34,7 @@
     </div>
     <div class="galeria">
         <div class="row container ml-5">
-            <div class="col-md-5 mt-5">
+            <div class="col-12 col-md-5 mt-5">
                 <h2>choose</h2>
                 <h3>These Best</h3>
                 <h3>Treks For Spring</h3>
@@ -42,6 +42,19 @@
             </div>
             <div class="col-md-7">
                 <!--Aqui dejare es espacio para el carusel de imagenes que viene en la foto-->
+                <div class="carousel">
+                    <button class="carousel__button previous fas fa-arrow-left" id="previous"></button>
+                    <div class="carousel__images">
+                        <img id="foto1" src="img/foto1.png" alt="">
+                        <img id="foto2" src="img/foto2.png" alt="">
+                        <img id="foto3" src="img/image3.png" alt="">
+                        <img id="foto4" src="img/foto1.png" alt="">
+                        <img id="foto5" src="img/foto2.png" alt="">
+                        <img id="foto6" src="img/image3.png" alt="">
+                    </div>
+                    <button class="carousel__button next fas fa-arrow-right" id="next"></button>
+                </div>
+
             </div>
 
         </div>
@@ -51,7 +64,7 @@
         <div class="d-flex justify-content-center">
             <div class="col-md-2">
             </div>
-            <div class="col-md-8 text-center">
+            <div class="col-12 col-md-8 text-center">
                 <h1>we're largest & safest</h1>
                 <h1>hiking organisation</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita nihil corporis maiores dolorum nostrum sint consectetur cumque accusantium reprehenderit deleniti debitis recusandae eveniet accusamus ipsam, quibusdam fugit voluptate, quo dolorem.</p>
@@ -105,7 +118,37 @@
         </div>
     </footer>
     </div>
-    
+    <script>
+        const carouselImages = document.querySelector('.carousel__images');
+        const carouselButtons = document.querySelectorAll('.carousel__button');
+        const numberOfImages = document.querySelectorAll('.carousel__images img').length;
+        var img = ["foto1", "foto2","foto3","foto4","foto5","foto6"];
+        let imageIndex = 1;
+        let translateX = 0;
+
+        carouselButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            if (event.target.id === 'previous') {
+            if (imageIndex !== 1) {
+                imageIndex--;
+                translateX += 300;
+                document.getElementById(img[imageIndex]).style.visibility = "visible";
+                
+            }
+            } else {
+                let img3=imageIndex-1;
+                document.getElementById(img[img3]).style.visibility = "hidden";
+            if (imageIndex !== numberOfImages) {
+                imageIndex++;
+                translateX -= 300;
+                
+            }
+            }
+            
+            carouselImages.style.transform = `translateX(${translateX}px)`;
+        });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
