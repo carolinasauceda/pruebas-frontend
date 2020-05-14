@@ -241,3 +241,120 @@ footer h2{
   .carousel_button:hover {
     opacity: 0.5;
   }
+
+  /* Diseño responsivo de la pagina hiking*/
+  @media (max-width: 1280px){
+    .logo{
+        width: 80%;
+        padding-left: 5%;
+    }
+    nav{
+        margin-top: 1%;
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 70%;
+        transition: color .5s;
+        
+    }
+    body{
+        background-image: url("../img/fondo1.png") ;
+        background-position:2% 8%;
+    }
+    .hero .container{
+        margin-left: 1%;
+    }
+    .hero{
+        text-transform: uppercase;
+        margin-top: 10%;
+        
+        
+    }
+    .hero h1{
+        font-size: 400%;
+        font-weight: 800;
+    }
+    .hero h2{
+        font-size: 220%;
+        font-weight: 800;
+    }
+    .hero h5{
+        font-size: 120%;
+        font-weight: 800;
+    }
+    .boton{
+        padding: 3% 3%;
+        font-size: 65%;
+    }
+    .galeria h2
+    {
+        font-size: 35px;
+    }
+    .galeria h3{
+        font-size: 40px;
+    }
+    .galeria p{
+        margin-top: 6%;
+        font-size: 15px;
+    }
+    .carousel {
+        margin: 10rem auto 10rem auto;
+        width: 350px;
+        height: 50%;
+    }
+    .carousel_button.previous {
+        left: -180%;
+        top: 80%;
+      }
+      
+      .carousel_button.next {
+        right: 200%;
+        top: 80%;
+      }
+      .seccion-baja
+    {
+        padding: 3%;
+    }
+    .seccion-baja .texto
+    {
+        padding-top: 7%;
+        padding-left: 0;
+
+    }
+    .seccion-baja img{
+        width: 90%;
+        padding: 4% 0 2% 0;
+    }
+    .seccion-baja .texto h1{
+        font-size: 260%;
+        font-weight: 800;
+    }
+    .fondo-footer
+    {
+        margin: 7% 1% 2% 1%;
+    }
+    .footer{
+        
+        padding: 4% 1% 4% 4%;
+    }
+    footer ul li a{
+        font-size: 80%;
+    }
+
+    footer h1{
+        font-size: 190%;
+    }
+    footer h2{
+        font-size: 130%;
+    }
+    .derechos{
+        padding-top: 8%;
+        padding-left: 8%;
+    }
+    .redes a{
+        width: 18%;
+    }
+    }
