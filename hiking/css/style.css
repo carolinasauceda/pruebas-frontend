@@ -14,6 +14,9 @@ body{
 nav{
     margin-top: 1%;
 }
+.margen{
+    margin-left: 0.5%;
+}
 nav ul li a{
     color: black;
     text-decoration: none;
@@ -174,6 +177,9 @@ footer h2{
 .redes a:hover{
     color: #000;
     background-color:rgb(110, 237, 253);
+}
+.redes div{
+    justify-content: end;
 }
 .negro
 {
@@ -361,8 +367,14 @@ footer h2{
     .redes a{
         width: 18%;
     }
+    .redes div{
+        justify-content: end;
     }
-    @media (max-width: 768px){
+    }
+    @media (max-width: 769px){
+        .margen{
+            margin-left: 2%;
+        }
         .logo{
             width: 40%;
             padding-left: 2%;
@@ -375,29 +387,29 @@ footer h2{
             text-decoration: none;
             font-weight: 700;
             letter-spacing: 2px;
-            font-size: 30%;
+            font-size: 45%;
             transition: color .5s;
             
         }
         body{
             background-image: url("../img/fondo1.png") ;
-            background-size: 70%;
+            background-size: 100%;
         }
         .hero .container{
             margin-left: -2%;
         }
         .hero{
             text-transform: uppercase;
-            margin-top: 2%;
+            margin-top: 8%;
             
             
         }
         .hero h1{
-            font-size: 200%;
+            font-size: 250%;
             font-weight: 800;
         }
         .hero h2{
-            font-size: 100%;
+            font-size: 130%;
             font-weight: 800;
         }
         .hero h5{
@@ -420,20 +432,37 @@ footer h2{
             font-size: 15px;
         }
         .carousel {
-            width: 100px;
-            height: 5%;
+            width: 10px;
+            height: 10%;
         }
         .carousel_images img {
-            width: 20%;
+            width: 120%;
+          }
+          .carousel_button {
+            background: rgba(37, 37, 37, 0);
+            border: 0;
+            border-radius: 50%;
+            color: #000;
+            cursor: pointer;
+            font-size: 3rem;
+            font-weight: bold;
+            height: 4rem;
+            opacity: 0.25;
+            position: absolute;
+            -webkit-transition: opacity 0.25s;
+            transition: opacity 0.25s;
+            width: 4rem;
+            z-index: 1;
           }
         .carousel_button.previous {
-            left: -160%;
-            top: 80%;
+            left: 5px;
+            top: 350%;
           }
           
-          .carousel_button.next {
-            right: 170%;
-            top: 80%;
+        .carousel_button.next {
+            right: 10px;
+            top: 350%;
+            
           }
           .seccion-baja
         {
@@ -447,7 +476,7 @@ footer h2{
         }
         .seccion-baja img{
             width: 90%;
-            padding: 4% 0 2% 0;
+            padding: 4% 0 3% 4%;
         }
         .seccion-baja .texto h1{
             font-size: 260%;
@@ -459,23 +488,28 @@ footer h2{
         }
         .footer{
             
-            padding: 4% 1% 4% 4%;
+            padding: 4% 0 4% 3%;
         }
         footer ul li a{
-            font-size: 80%;
+            font-size: 45%;
         }
     
         footer h1{
-            font-size: 190%;
+            font-size: 210%;
+            padding-left: 35%;
         }
         footer h2{
-            font-size: 130%;
+            font-size: 150%;
+            padding-left: 40%;
         }
         .derechos{
             padding-top: 8%;
             padding-left: 8%;
         }
         .redes a{
-            width: 18%;
+            width: 10%;
+        }
+        .redes div{
+            justify-content: center;
         }
     }
