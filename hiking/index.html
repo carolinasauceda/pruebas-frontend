@@ -10,15 +10,24 @@
 </head>
 <body>
     <div class="container-fluid">
-    <nav class="navbar">
-        <a href="/hiking/"><img class="logo" src="img/logo.png" alt="logo"></a>
-        <ul class="d-flex justify-content-between list-unstyled">
-            <li class="pr-5"><a href="#">HOME</a></li>
-            <li class="pr-5"><a href="#">UPCOMING TREKS</a></li>
-            <li class="pr-5"><a href="#">TREK FOR FAMILY</a></li>
-            <li class="pr-5"><a href="#">CONTACT US</a></li>
-        </ul>
-    </nav>
+        <div class="header">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+        
+            <ul class="menu">
+              <a href="/hiking/">Home</a>
+              <a href="#">UPCOMING TREKS</a>
+              <a href="#">TREK FOR FAMILY</a>
+              <a href="#">CONTACT US</a>
+              <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+              </label>
+            </ul>
+          </div>
+    
     <div class="hero">
         <div class="row container">
             <div class="col-md-8 margen">
@@ -40,7 +49,7 @@
                 <h3>Treks For Spring</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum quisquam in doloremque velit aliquam perspiciatis vitae ipsa dignissimos eos magni architecto voluptatibus illum consequatur fugit ex, mollitia maiores ducimus!</p>
             </div>
-            <div class="col-md-7">
+            <div class="col-12 col-md-7">
                 <!--Aqui dejare es espacio para el carusel de imagenes que viene en la foto-->
                 <div class="carousel">
                     <button class="carousel_button previous fas fa-arrow-left" id="previous"></button>
@@ -73,7 +82,7 @@
     <div class="container-fluid">
     <div class="seccion-baja">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5">
                 <img src="img/imagen1.png" alt="hiking-information">
             </div>
             <div class="col-12 col-md-6 texto margen">
@@ -88,12 +97,12 @@
     </div>
     <footer class="fondo-footer">
         <div class="navbar footer">
-            <a href="/hiking/"><img class="logo" src="img/logo.png" alt="logo"></a>
+            <a href="/hiking/"><img src="img/logo.png" alt="logo" class="w-50"></a>
             <ul class="d-flex justify-content-between list-unstyled">
-                <li class="pr-5"><a href="#">HOME</a></li>
-                <li class="pr-5"><a href="#">UPCOMING TREKS</a></li>
-                <li class="pr-5"><a href="#">TREK FOR FAMILY</a></li>
-                <li class="pr-5"><a href="#">CONTACT US</a></li>
+                <li class="pr-3"><a href="#">HOME</a></li>
+                <li class="pr-3"><a href="#">UPCOMING TREKS</a></li>
+                <li class="pr-3"><a href="#">TREK FOR FAMILY</a></li>
+                <li class="pr-4"><a href="#">CONTACT US</a></li>
             </ul>
         </div>
         <div class="row footer-informacion">

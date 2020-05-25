@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*DarkCode codigo*/
+.header{
+    height: 100px;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+  }
+  .logo{
+    padding-top: 2%;
+    float: left;
+    line-height: 100px;
+    width: 12%;
+  }
+  
+  .menu{
+    float: right;
+  }
+  .menu a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.4s;
+    line-height: 100px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: rgb(110, 237, 253);
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
 body{
     background-image: url("../img/fondo1.png");
     background-size: cover;
@@ -7,10 +56,10 @@ body{
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
 }
-.logo{
+/*.logo{
     width: 110%;
     padding-left: 15%;
-}
+}*/
 nav{
     margin-top: 1%;
 }
@@ -26,16 +75,33 @@ nav ul li a{
     transition: color .5s;
     
 }
-nav ul li a:hover{
+nav ul li a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
     color: rgb(110, 237, 253);
     text-decoration: none;
+}
+.show-menu-btn, .hide-menu-btn{
+    transition: 0.5s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn{
+    float: right;
+}
+.show-menu-btn i{
+    line-height: 30px;
+}
+#chk{
+   position: absolute;
+   visibility: hidden; 
+   z-index: -1111;
 }
 .hero .container{
     margin-left: 2%;
 }
 .hero{
     text-transform: uppercase;
-    margin-top: 18%;
+    margin-top: 17%;
     
     
 }
@@ -92,8 +158,8 @@ nav ul li a:hover{
 {
     background:linear-gradient(rgba(2,2,2,.1),rgba(0,0,0,.5)),url("../img/fondo2.png");
     background-size: cover;
-    height: 5%;
-    padding: 6% 0;
+    height: 4%;
+    padding: 4% 0;
 }
 .seccion-media h1{
     color: #fff;
@@ -251,22 +317,26 @@ footer h2{
 
   /* Diseño responsivo de la pagina hiking*/
   @media (max-width: 1280px){
-    .logo{
-        width: 80%;
-        padding-left: 5%;
-    }
-    nav{
-        margin-top: 1%;
-    }
-    nav ul li a{
-        color: black;
-        text-decoration: none;
-        font-weight: 700;
-        letter-spacing: 2px;
-        font-size: 70%;
-        transition: color .5s;
-        
-    }
+    
+    .header{
+        height: 100px;
+        padding: 0 20px;
+        color: rgb(0, 0, 0);
+      }
+      .logo{
+        padding-top: 2%;
+        float: left;
+        line-height: 100px;
+        width: 20%;
+      }
+      
+      .menu{
+        float: right;
+      }
+      .menu a{
+        padding: 0 10px;
+        letter-spacing: 4px;
+      }
     body{
         background-image: url("../img/fondo1.png") ;
         background-position:2% 8%;
@@ -276,7 +346,7 @@ footer h2{
     }
     .hero{
         text-transform: uppercase;
-        margin-top: 10%;
+        margin-top: 8%;
         
         
     }
@@ -371,25 +441,47 @@ footer h2{
         justify-content: end;
     }
     }
-    @media (max-width: 769px){
-        .margen{
-            margin-left: 2%;
-        }
+    @media (max-width: 361px){
         .logo{
-            width: 40%;
-            padding-left: 2%;
-        }
-        nav{
-            margin-top: 1%;
-        }
-        nav ul li a{
-            color: black;
-            text-decoration: none;
-            font-weight: 700;
-            letter-spacing: 2px;
-            font-size: 45%;
-            transition: color .5s;
-            
+            padding-top: 2%;
+            float: left;
+            line-height: 100px;
+            width: 20%;
+          }
+        .show-menu-btn,.hide-menu-btn{
+            display: block;
+          }
+          .show-menu-btn{
+              float: none;
+              padding-left: 65% ;
+          }
+          .menu{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 20px 0;
+            line-height: normal;
+            transition: 0.7s;
+          }
+          .menu a{
+            display: block;
+            padding: 10px;
+            z-index: -333;
+          }
+          .hide-menu-btn{
+            position: absolute;
+            top: 40px;
+            right: 20px;
+          }
+          #chk:checked ~ .menu{
+            right: 0;
+          }
+        .margen{
+            margin-left: 0.00001%;
         }
         body{
             background-image: url("../img/fondo1.png") ;
@@ -400,43 +492,45 @@ footer h2{
         }
         .hero{
             text-transform: uppercase;
-            margin-top: 8%;
-            
-            
+            margin-top: 0.00001%; 
         }
         .hero h1{
-            font-size: 250%;
+            font-size: 70%;
             font-weight: 800;
         }
         .hero h2{
-            font-size: 130%;
+            font-size: 45%;
             font-weight: 800;
         }
         .hero h5{
-            font-size: 60%;
+            font-size: 30%;
             font-weight: 800;
         }
         .boton{
-            padding: 3% 3%;
-            font-size: 35%;
+            padding: 2% 2%;
+            font-size: 4px;
         }
         .galeria h2
         {
-            font-size: 35px;
+            font-size: 22px;
         }
         .galeria h3{
-            font-size: 40px;
+            font-size: 27px;
         }
         .galeria p{
-            margin-top: 6%;
-            font-size: 15px;
+            margin-top: 2%;
+            font-size: 12px;
+            width: 70%;
         }
         .carousel {
-            width: 10px;
+            margin: 5rem 0 7rem 17rem;
+            width: 15%;
             height: 10%;
+            left: -73%;
         }
         .carousel_images img {
-            width: 120%;
+            width: 60%;
+            
           }
           .carousel_button {
             background: rgba(37, 37, 37, 0);
@@ -444,7 +538,7 @@ footer h2{
             border-radius: 50%;
             color: #000;
             cursor: pointer;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
             height: 4rem;
             opacity: 0.25;
@@ -455,7 +549,7 @@ footer h2{
             z-index: 1;
           }
         .carousel_button.previous {
-            left: 5px;
+            left: 40px;
             top: 350%;
           }
           
@@ -464,50 +558,72 @@ footer h2{
             top: 350%;
             
           }
+          .seccion-media{
+            width: 80%;
+          }
+          .seccion-media h1{
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        .seccion-media p{
+            color: #fff;
+            font-weight: 100;
+            font-size: 10px;
+            
+        }
           .seccion-baja
         {
-            padding: 3%;
+            padding: 1%;
         }
         .seccion-baja .texto
         {
-            padding-top: 7%;
-            padding-left: 0;
-    
+            padding: 4%;
+            
+        }
+        .seccion-baja .texto p{
+            padding-top: 1%;
+            font-size: 9px;
+            width: 60%;
         }
         .seccion-baja img{
-            width: 90%;
-            padding: 4% 0 3% 4%;
+            width: 70%;
+            padding: 10% 0 3% 4%;
         }
         .seccion-baja .texto h1{
-            font-size: 260%;
+            font-size: 130%;
             font-weight: 800;
         }
         .fondo-footer
         {
-            margin: 7% 1% 2% 1%;
+            width: 75%;
+            margin: 2% 0.1% 2% 0.1%;
         }
         .footer{
             
-            padding: 4% 0 4% 3%;
+            padding: 4% 0 3% 3%;
         }
         footer ul li a{
-            font-size: 45%;
+            font-size: 5px;
         }
     
         footer h1{
-            font-size: 210%;
-            padding-left: 35%;
+            font-size: 130%;
+            padding-left: 30%;
         }
         footer h2{
-            font-size: 150%;
-            padding-left: 40%;
+            font-size: 130%;
+            padding-left: 30%;
         }
         .derechos{
-            padding-top: 8%;
-            padding-left: 8%;
+            padding-top: 6%;
+            padding-left: 3%;
+            font-size: 10px;
         }
         .redes a{
-            width: 10%;
+            width: 15%;
+            font-size: 15px;
         }
         .redes div{
             justify-content: center;
