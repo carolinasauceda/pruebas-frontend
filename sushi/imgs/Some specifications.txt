@@ -1,0 +1,19 @@
+//Background color
+-Body #e37e7e
+-Buttons #e37e7e
+
+
+//Fonts
+-Navbar Montserrat, sans-serif Bold
+-Titles Montserrat, sans-serif Bold
+-Paragrafs Montserrat, sans-serif Regular
+-Buttons Montserrat, sans-serif Bold
+
+//Font color
+#e37e7e & #fff
+
+//Your email button
+Montserrat, sans-serif Bold #9a9a9a
+
+//Footer
+-All Montserrat, sans-serif Regular #fff
