@@ -12,9 +12,6 @@
     width: 5%;
   }
   
-  .menu{
-    
-  }
   .menu a{
     color: #fff;
     text-transform: uppercase;
@@ -57,25 +54,14 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
+    background-color: #e37e7e;
 }
 /*.logo{
     width: 110%;
     padding-left: 15%;
 }*/
-nav{
-    margin-top: 1%;
-}
 .margen{
-    margin-left: 0.5%;
-}
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 110%;
-    transition: color .5s;
-    
+    margin-left: 14%;
 }
 nav ul li a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
     color: rgb(110, 237, 253);
@@ -104,8 +90,6 @@ nav ul li a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
 .hero{
     
     margin-top: 17%;
-    
-    
 }
 .hero h1{
     text-transform: uppercase;
@@ -135,187 +119,219 @@ nav ul li a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
     text-decoration: none;
 
 }
-.galeria
+.best-seller
 {
-    margin-top: 22%;
+    margin-top: 15%;
+    
 }
-.galeria h2
+.best-seller h2
 {
     font-size: 45px;
-    color: #969696;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: -4px;
-}
-.galeria h3{
-    font-size: 50px;
     font-weight: 700;
+    letter-spacing: 2px;
 }
-.galeria p{
-    margin-top: 7%;
+.best-seller h1{
+    font-weight: 700;
+    color: #fff;
+    padding-right: 6%;
+}
+.titulo-1{
+    font-weight: 700;
+    color: #fff;
+    padding-right: 6%;
+    margin-top: 3%;
+}
+.info-plate{
+    margin-top: 9%;
     font-size: 20px;
     font-weight: 400;
+    width: 100% !important;
+    color: #fff;
+    padding-left: 2% !important;
+}
+.info-plate-1{
+    margin-top: 12%;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100% !important;
+    color: #fff;
+    padding-left: 1% !important;
+}
+.best-seller p{
+    margin-top: 9%;
+    font-size: 20px;
+    font-weight: 400;
+    width: 70%;
+    color: #fff;
+    padding-left: 5%;
+}
+.best-seller .info{
+    padding-left: 30% !important;
+}
+.sushi{
+    padding-top: 250%;
 }
 .seccion-media
 {
-    background:linear-gradient(rgba(2,2,2,.1),rgba(0,0,0,.5)),url("../img/fondo2.png");
-    background-size: cover;
-    height: 4%;
-    padding: 4% 0;
+    background-image:url("../imgs/Group3/Group3_background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding-top: 10%;
+
 }
-.seccion-media h1{
-    color: #fff;
+.seccion-media h1, .seccion-delicious h1, footer h1{
+    color: #e37e7e;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
 }
-.seccion-media p{
-    color: #fff;
-    font-weight: 100;
+.seccion-media p, .seccion-delicious p, footer p{
+    color: #e37e7e;
+    font-weight: 400;
     font-size: 20px;
+}
+.seccion-media .boton2, .seccion-delicious .boton2{
+    padding: 3% 13%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e37e7e;
+    font-size: 150%;
+    transition: background-color .6s;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.boton2:hover{
+    color: #e37e7e;
+    background-color: #fff;
 }
 .seccion-baja
 {
     padding: 5%;
 }
-.seccion-baja .texto
-{
-    padding-top: 7%;
-    padding-left: 0;
 
-}
-.seccion-baja .texto h1{
+.seccion-baja h1{
     font-size: 350%;
-    font-weight: 800;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
 }
-.fondo-footer
+.seccion-baja p{
+    font-weight: 400;
+    color: #fff;
+}
+.seccion-baja .sushi2{
+    padding-left:40%;
+}
+.seccion-baja .separacion{
+    padding-top: 10%;
+}
+.seccion-delicious
 {
-    background-color: #e9e9e9;
-    margin: 7% 2% 3% 2%;
+    background-image:url("../imgs/Group5/Group5_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding-top: 10%;
+
 }
-.footer{
+.sushi3{
+    padding-top: 450%;
+}
+.seccion-dueño{
+    background-image:url("../imgs/Group6/Group6_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
     
-    padding: 4% 3%;
 }
-footer ul li a{
-    color: black;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 90%;
-    transition: color .5s;
+.seccion-dueño img{
+    padding-top: 25%;
 }
-footer ul li a:hover{
-    text-decoration: none;
-    color:rgb(110, 237, 253) ;
+.seccion-dueño h1{
+    font-size: 350%;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 5%;
 }
-.footer-informacion
-{
-    padding: 0 5% 4% 5%;
+.seccion-dueño p{
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 5%;
+}
+footer{
+    background-image:url("../imgs/Group7/group7-8_Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer h1{
+    padding-top: 35%;
+}
+footer .input-group{
+    margin-top: 10%;
 }
 
-footer h1{
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 700;
-    font-size: 185%;
+footer .input-group.input-group-lg input{
+    z-index: 1;
+    background-color: #e9e9e9;
+    border-radius: 50px;
 }
-footer h2{
-    text-transform: uppercase;
+footer .input-group.input-group-lg .input-group-append span{
+    z-index: 1111;
+    margin-right: 40%;
     color: #fff;
+    background-color: #e37e7e;
     font-weight: 700;
-    font-size: 120%;
+    text-transform: uppercase;
 }
-.derechos{
-    padding-top: 8%;
-    padding-left: 10%;
-    color: #494949;
-    font-weight: 500;
+.sushi4{
+    padding-top: 30%;
+}
+.sushi5{
+    padding-top: 15%;
+}
+.informacion{
+    padding-top: 30%;
+}
+.informacion h3,.informacion p,.informacion ul li{
+    
+    color:#fff;
+    font-weight: normal;
+}
+.informacion p{
+    padding-top: 5%;
+    width: 80%;
+}
+.informacion a{
+    color: #e37e7e;
 }
 .redes a{
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
     border-radius: 50%;
-    width: 15%;
-    padding: 3% 3%;
+    width: 7%;
+    padding: 1% 1%;
     text-align: center;
-    margin: 14% 5% 0 0;
-    font-size: 130%;
+    margin: 5% 2% 10% 0;
+    font-size: 140%;
     transition: background-color .6s;
 }
 .redes a:hover{
-    color: #000;
-    background-color:rgb(110, 237, 253);
+    color: #fff;
+    background-color:#e37e7e;
 }
-.redes div{
-    justify-content: end;
+.informacion ul{
+    list-style: none;
+    padding-left: 0;
 }
-.negro
-{
-    background-color: #000;
+.informacion ul li{
+    padding-top: 5%;
+
 }
-.carousel {
-    box-sizing: border-box;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 20rem auto 10rem auto;
-    position: relative;
-    width: 100px;
-    left: -40%;
-  }
-  
-  .carousel_images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: -webkit-transform 0.25s;
-    transition: transform 0.25s;
-    transition: transform 0.25s, -webkit-transform 0.25s;
-  }
-  
-  .carousel_images img {
-    border-radius: 5px;
-    margin-right: 45px;
-    -webkit-box-shadow: 5px 5px 40px #777777;
-            box-shadow: 5px 5px 40px #777777;
-  }
-  
-  .carousel_button {
-    background: rgba(37, 37, 37, 0);
-    border: 0;
-    border-radius: 50%;
-    color: #000;
-    cursor: pointer;
-    font-size: 4rem;
-    font-weight: bold;
-    height: 6rem;
-    opacity: 0.25;
-    position: absolute;
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    width: 6rem;
-    z-index: 1;
-  }
-  
-  .carousel_button.previous {
-    left: -480%;
-    top: 80%;
-  }
-  
-  .carousel_button.next {
-    right: 300%;
-    top: 80%;
-  }
-  
-  .carousel_button:hover {
-    opacity: 0.5;
-  }
 
   /* Diseño responsivo de la pagina hiking*/
   @media (max-width: 1280px){
@@ -323,323 +339,277 @@ footer h2{
     .header{
         height: 100px;
         padding: 0 20px;
-        color: rgb(0, 0, 0);
+        background-color: #e37e7ecb;
       }
       .logo{
         padding-top: 2%;
         float: left;
-        line-height: 100px;
-        width: 20%;
+        line-height: 110px;
+        width: 6%;
       }
       
-      .menu{
-        float: right;
-      }
       .menu a{
-        padding: 0 10px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 30px;
+        transition: 0.4s;
+        line-height: 110px;
+        font-weight: bold;
         letter-spacing: 4px;
       }
-    body{
-        background-image: url("../img/fondo1.png") ;
-        background-position:2% 8%;
-    }
-    .hero .container{
-        margin-left: 1%;
+      .menu img{
+          padding-left: 10%;
+      }
+      body{
+        background-image: url("../imgs/Group1/Hero_area.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #e37e7e;
     }
     .hero{
-        text-transform: uppercase;
-        margin-top: 8%;
         
-        
+        margin-top: 10%;
     }
     .hero h1{
-        font-size: 400%;
+        text-transform: uppercase;
+        font-size: 300%;
+        width: 50%;
         font-weight: 800;
+        color: #fff;
     }
-    .hero h2{
-        font-size: 220%;
-        font-weight: 800;
-    }
-    .hero h5{
-        font-size: 120%;
-        font-weight: 800;
-    }
-    .boton{
-        padding: 3% 3%;
-        font-size: 65%;
-    }
-    .galeria h2
-    {
-        font-size: 35px;
-    }
-    .galeria h3{
-        font-size: 40px;
-    }
-    .galeria p{
-        margin-top: 6%;
+    .hero p{
+        font-weight: 400;
+        color: #fff;
+        width: 80%;
         font-size: 15px;
     }
-    .carousel {
-        margin: 10rem 0 10rem 17rem;
-        width: 300px;
-        height: 50%;
+    .boton{
+        padding: 3% 10%;
+        text-decoration: none;
+        color: #e37e7e;
+        background-color: #fff;
+        font-size: 100%;
+        transition: background-color .6s;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 30px;
     }
-    .carousel_images img {
-        width: 60%;
-      }
-    .carousel_button.previous {
-        left: -160%;
-        top: 80%;
-      }
-      
-      .carousel_button.next {
-        right: 170%;
-        top: 80%;
-      }
-      .seccion-baja
+    .boton:hover{
+        color: #fff;
+        background-color:#000;
+        text-decoration: none;
+    
+    }
+    .best-seller
+    {
+        margin-top: 25%;
+        
+    }
+    .best-seller .info{
+        padding-left: 30% !important;
+    }
+    .best-seller h2
+    {
+        font-size: 45px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .best-seller h1{
+        font-weight: 700;
+        color: #fff;
+        padding-right: 7%;
+        margin-top: 1%;
+    }
+    .titulo-1{
+        font-weight: 700;
+        color: #fff;
+        padding-right: 6%;
+       margin-top: 1%;
+    }
+    .info-plate{
+        margin-top: 9%;
+        font-size: 20px;
+        font-weight: 400;
+        width: 100% !important;
+        color: #fff;
+        padding-left: 2% !important;
+    }
+    .info-plate-1{
+        margin-top: 12%;
+        font-size: 20px;
+        font-weight: 400;
+        width: 100% !important;
+        color: #fff;
+        padding-left: 1% !important;
+    }
+    
+    .sushi{
+        padding-top: 250%;
+    }
+    .seccion-media
+    {
+        background-image:url("../imgs/Group3/Group3_background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 7%;
+        height: 700px;
+
+    }
+    .seccion-media h1, .seccion-delicious h1, footer h1{
+        color: #e37e7e;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    .seccion-media p, .seccion-delicious p, footer p{
+        color: #e37e7e;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .seccion-media .boton2, .seccion-delicious .boton2{
+        padding: 3% 10%;
+        text-decoration: none;
+        color: #fff;
+        background-color: #e37e7e;
+        font-size: 100%;
+        transition: background-color .6s;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+    .boton2:hover{
+        color: #e37e7e;
+        background-color: #fff;
+    }
+    .seccion-baja
     {
         padding: 3%;
     }
-    .seccion-baja .texto
-    {
+
+    .seccion-baja h1{
+        font-size: 300%;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .seccion-baja p{
+        font-weight: 400;
+        color: #fff;
+    }
+    .seccion-baja .sushi2{
+        padding-left:40%;
+    }
+    .seccion-baja .separacion{
         padding-top: 7%;
-        padding-left: 0;
-
     }
-    .seccion-baja img{
-        width: 90%;
-        padding: 4% 0 2% 0;
-    }
-    .seccion-baja .texto h1{
-        font-size: 260%;
-        font-weight: 800;
-    }
-    .fondo-footer
+    .seccion-delicious
     {
-        margin: 7% 1% 2% 1%;
-    }
-    .footer{
-        
-        padding: 4% 1% 4% 4%;
-    }
-    footer ul li a{
-        font-size: 80%;
-    }
+        background-image:url("../imgs/Group5/Group5_background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
 
+
+    }
+    .sushi3{
+        padding-top: 500%;
+    }
+    .seccion-dueño{
+        background-image:url("../imgs/Group6/Group6_background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .seccion-dueño img{
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+    .seccion-dueño h1{
+        font-size: 350%;
+        font-weight: 700;
+        color: #fff;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+    .seccion-dueño p{
+        font-weight: 400;
+        color: #fff;
+        font-size: 20px;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+    footer{
+        background-image:url("../imgs/Group7/group7-8_Background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     footer h1{
-        font-size: 190%;
+        padding-top: 35%;
     }
-    footer h2{
-        font-size: 130%;
+    footer .input-group{
+        margin-top: 10%;
     }
-    .derechos{
-        padding-top: 8%;
-        padding-left: 8%;
+    
+    footer .input-group.input-group-lg input{
+        z-index: 1;
+        background-color: #e9e9e9;
+        border-radius: 50px;
+    }
+    footer .input-group.input-group-lg .input-group-append span{
+        z-index: 1111;
+        margin-right: 40%;
+        color: #fff;
+        background-color: #e37e7e;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .sushi4{
+        padding-top: 30%;
+    }
+    .sushi5{
+        padding-top: 15%;
+    }
+    .informacion{
+        padding-top: 5%;
+    }
+    .informacion h3,.informacion p,.informacion ul li{
+        
+        color:#fff;
+        font-weight: normal;
+    }
+    .informacion p{
+        padding-top: 5%;
+        width: 80%;
+    }
+    .informacion a{
+        color: #e37e7e;
     }
     .redes a{
-        width: 18%;
+        color: #000;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 9%;
+        padding: 1% 1%;
+        text-align: center;
+        margin: 2% 2% 10% 0;
+        font-size: 140%;
+        transition: background-color .6s;
     }
-    .redes div{
-        justify-content: end;
+    .redes a:hover{
+        color: #fff;
+        background-color:#e37e7e;
     }
+    .informacion ul{
+        list-style: none;
+        padding-left: 0;
     }
-    @media (max-width: 361px){
-        .logo{
-            padding-top: 2%;
-            float: left;
-            line-height: 100px;
-            width: 20%;
-          }
-        .show-menu-btn,.hide-menu-btn{
-            display: block;
-          }
-          .show-menu-btn{
-              float: none;
-              padding-left: 98% ;
-          }
-          .menu{
-            position: fixed;
-            width: 100%;
-            height: 110vh;
-            background: rgb(159, 228, 255);
-            right: -100%;
-            top: 0;
-            text-align: center;
-            padding: 20px 0;
-            line-height: normal;
-            transition: 0.7s;
-            z-index: 2;
-          }
-          .menu a{
-            display: block;
-            padding: 5px;
-            z-index: 2;
-          }
-          .hide-menu-btn{
-            position: absolute;
-            top: 40px;
-            right: 20px;
-          }
-          #chk:checked ~ .menu{
-            right: 0;
-          }
-        .margen{
-            margin-left: 0.00001%;
-        }
-        body{
-            background-image: url("../img/fondo1.png") ;
-            background-size: 105%;
-        }
-        .hero .container{
-            margin-left: -7%;
-            z-index: 1;
-        }
-        .hero{
-            text-transform: uppercase;
-            margin-top: 0.00001%; 
-        }
-        .hero h1{
-            font-size: 160%;
-            font-weight: 800;
-        }
-        .hero h2{
-            font-size: 100%;
-            font-weight: 800;
-        }
-        .hero h5{
-            font-size: 50%;
-            font-weight: 800;
-        }
-        .boton{
-            padding: 3% 3%;
-            font-size: 12px;
-        }
-        .galeria h2
-        {
-            font-size: 34px;
-        }
-        .galeria h3{
-            font-size: 27px;
-        }
-        .galeria p{
-            margin-top: 2%;
-            font-size: 18px;
-            
-        }
-        .carousel {
-            margin: 5rem 0 7rem 17rem;
-            width: 15%;
-            height: 10%;
-            left: -90%;
-        }
-        .carousel_images img {
-            width: 200%;
-            margin-right: 10px;
-            
-          }
-          .carousel_button {
-            background: rgba(37, 37, 37, 0);
-            border: 0;
-            border-radius: 50%;
-            color: #000;
-            cursor: pointer;
-            font-size: 2.5rem;
-            font-weight: bold;
-            height: 4rem;
-            opacity: 0.25;
-            position: absolute;
-            -webkit-transition: opacity 0.25s;
-            transition: opacity 0.25s;
-            width: 4rem;
-            z-index: 1;
-          }
-        .carousel_button.previous {
-            left: 40px;
-            top: 350%;
-          }
-          
-        .carousel_button.next {
-            right: 10px;
-            top: 350%;
-            
-          }
-          .seccion-media{
-            width: 100%;
-          }
-          .seccion-media h1{
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 24px;
-        }
-        .seccion-media p{
-            color: #fff;
-            font-weight: 100;
-            font-size: 14px;
-            
-        }
-          .seccion-baja
-        {
-            padding: 1%;
-        }
-        .seccion-baja .texto
-        {
-            padding: 4%;
-            
-        }
-        .seccion-baja .texto p{
-            padding-top: 1%;
-            font-size: 14px;
-            
-        }
-        .seccion-baja img{
-            width: 100%;
-            padding: 10% 0 3% 4%;
-        }
-        .seccion-baja .texto h1{
-            font-size: 140%;
-            font-weight: 800;
-        }
-        .fondo-footer
-        {
-            
-            margin: 2% 0.1% 2% 2%;
-        }
-        .footer{
-            
-            padding: 4% 0 3% 3%;
-        }
-        .footer img.w-50{
-            width: 20% !important;
-        }
-        .footer li.pr-3{
-            padding-right:3px !important;
-        }
-        footer ul li a{
-            font-size: 5px;
-        }
+    .informacion ul li{
+        padding-top: 5%;
     
-        footer h1{
-            font-size: 130%;
-            padding-left: 30%;
-        }
-        footer h2{
-            font-size: 130%;
-            padding-left: 30%;
-        }
-        .derechos{
-            padding-top: 6%;
-            padding-left: 2%;
-            font-size: 10px;
-        }
-        .col-12.col-md-6.text-center a.pl-5{
-            padding-left: 2% !important;
-        }
-        .redes a{
-            width: 15%;
-            font-size: 15px;
-        }
-        .redes div{
-            justify-content: center;
-        }
+    }
     }

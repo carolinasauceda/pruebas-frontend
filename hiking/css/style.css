@@ -174,15 +174,14 @@ nav ul li a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
 }
 .seccion-baja
 {
-    padding: 5%;
+    padding: 4%;
 }
 .seccion-baja .texto
 {
     padding-top: 7%;
-    padding-left: 0;
 
 }
-.seccion-baja .texto h1{
+.seccion-baja h1{
     font-size: 350%;
     font-weight: 800;
 }
